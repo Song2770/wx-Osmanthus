@@ -31,10 +31,10 @@
 }
 
 .progress-bar-container {
-  width: 80%;
-  height: 20px;
+  width: 88%;
+  height: 24px;
   background-color: #e9ecef;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
   margin-top: 14px;
 }

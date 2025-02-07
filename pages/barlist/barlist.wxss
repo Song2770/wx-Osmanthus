@@ -16,8 +16,8 @@
 }
 
 .bar-icon {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background-color: #e15a9c;
   border-radius: 16%;
   display: flex;
@@ -25,7 +25,8 @@
   align-items: center;
   margin-left: 10px;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: bold;
   margin-right: 15px;
 }
 
@@ -50,13 +51,14 @@
 }
 
 .action-button {
-  width: 150px;
+  width: 160px;
   background-color: transparent;
   color: #e15a9c;
   border: 1px solid #e15a9c;
   border-radius: 5px;
   margin-bottom: 4px;
   font-size: 15px;
+  letter-spacing: 3px;
 }
 
 .button-d-layout {
@@ -68,12 +70,14 @@
 }
 
 .image-button {
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   padding: 2px;
+  margin-top: 2px;
 }
 
 .action-button-d {
-  font-size: 10px;
+  font-size: 11px;
   background-color: transparent;
+  margin-top: 2px;
 }

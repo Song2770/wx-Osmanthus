@@ -2,9 +2,17 @@
 <view class="profile">
   <block wx:if="{{isLoggedIn}}">
     <view class="user-info">
-      <text>昵称: {{userInfo.nickname}}</text>
-      <text>性别: {{userInfo.gender}}</text>
-      <text>微信号: {{userInfo.wechatId}}</text>
+      <view class="name-row">
+        <text class="nickname">{{userInfo.nickname}}</text>
+        <image class="gender-icon" src="{{userInfo.gender === 'male' ? '/images/icon/male.png' : '/images/icon/female.png'}}" />
+      </view>
+      <text class="user-id">ID: {{userInfo.id}}</text>
+      
+      <view class="wechat-row" bindtap="toggleWechatId">
+        <text class="wechat-id" wx:if="{{showWechatId}}">{{userInfo.wechatId}}</text>
+        <text class="wechat-hint" wx:else>点击显示微信号</text>
+      </view>
+      
       <text>手机号: {{userInfo.phone}}</text>
       <text>酒量: {{userInfo.drinkingCapacity}}</text>
       <text>MBTI: {{userInfo.mbti}}</text>
@@ -14,7 +22,9 @@
     <button bindtap="contactSupport">联系客服</button>
   </block>
   <block wx:else>
-    <button bindtap="goToLogin">登录</button>
-    <button bindtap="goToRegister">注册</button>
+    <view class="lr-view">
+    <button class="login-button" bindtap="goToLogin">登录</button>
+    <button class="register-button" bindtap="goToRegister">注册</button>
+    </view>
   </block>
 </view>

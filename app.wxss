@@ -15,7 +15,7 @@
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影 */
 }
 
-.custom-tabbar .weui-tabbar__item {
+.weui-tabbar__item {
   padding-bottom: 10px; /* 调整内边距 */
 }
 

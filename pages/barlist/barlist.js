@@ -2,8 +2,9 @@ Page({
   data: {
     bars: [
       { name: "霓虹跳舞俱乐部", location: "位置A" },
-      { name: "XXXX俱乐部", location: "位置B" },
-      { name: "black俱乐部", location: "位置C" }
+      { name: "阁楼GLOW", location: "位置B" },
+      { name: "BlackBoom", location: "位置C" },
+      { name: "SALLA酒吧", location: "位置D"}
     ]
   },
   onLoad() {
