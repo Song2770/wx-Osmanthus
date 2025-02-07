@@ -1,0 +1,11 @@
+<!--pages/register/register.wxml-->
+<view class="register">
+  <input placeholder="昵称" data-field="nickname" bindinput="onInput"/>
+  <input placeholder="性别" data-field="gender" bindinput="onInput"/>
+  <input placeholder="微信号" data-field="wechatId" bindinput="onInput"/>
+  <input type="number" placeholder="手机号" data-field="phone" bindinput="onInput"/>
+  <input placeholder="酒量" data-field="drinkingCapacity" bindinput="onInput"/>
+  <input placeholder="MBTI" data-field="mbti" bindinput="onInput"/>
+  <input type="date" placeholder="生日" data-field="birthday" bindinput="onInput"/>
+  <button bindtap="register">注册</button>
+</view>

@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* app.wxss */
+.custom-tabbar {
+  height: 70px; /* 调整高度 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+}
+
+.custom-tabbar .weui-tabbar__item {
+  padding-bottom: 10px; /* 调整内边距 */
+}
+
+.page__footer {
+  height: 70px; /* 调整高度 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* 添加更明显的阴影 */
+  background-color: #ffffff; /* 确保背景色一致 */
+} 

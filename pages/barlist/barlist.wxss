@@ -1,0 +1,79 @@
+/* pages/barlist/barlist.wxss */
+.bar-list {
+  padding: 20px;
+}
+.bar-layout {
+  display: flex;
+}
+.bar-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  margin-bottom: 18px;
+  padding: 10px;
+}
+
+.bar-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #e15a9c;
+  border-radius: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.bar-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bar-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 3px;
+  padding: 2px;
+}
+
+.bar-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.action-button {
+  width: 150px;
+  background-color: transparent;
+  color: #e15a9c;
+  border: 1px solid #e15a9c;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.button-d-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; right: 0;
+  margin-right: 40px;
+}
+
+.image-button {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+}
+
+.action-button-d {
+  font-size: 10px;
+  background-color: transparent;
+}

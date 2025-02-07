@@ -1,0 +1,20 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <block wx:if="{{isLoggedIn}}">
+    <view class="user-info">
+      <text>昵称: {{userInfo.nickname}}</text>
+      <text>性别: {{userInfo.gender}}</text>
+      <text>微信号: {{userInfo.wechatId}}</text>
+      <text>手机号: {{userInfo.phone}}</text>
+      <text>酒量: {{userInfo.drinkingCapacity}}</text>
+      <text>MBTI: {{userInfo.mbti}}</text>
+      <text>生日: {{userInfo.birthday}}</text>
+      <text>星座: {{userInfo.zodiac}}</text>
+    </view>
+    <button bindtap="contactSupport">联系客服</button>
+  </block>
+  <block wx:else>
+    <button bindtap="goToLogin">登录</button>
+    <button bindtap="goToRegister">注册</button>
+  </block>
+</view>

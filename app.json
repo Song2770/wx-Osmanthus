@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/qrcode/qrcode",
+    "pages/barlist/barlist",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "桂花",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "selectedColor": "#e15a9c",
+    "list": [
+      {
+        "pagePath": "pages/qrcode/qrcode",
+        "text": "二维码",
+        "iconPath": "images/icon/qr_fill.png",
+        "selectedIconPath": "images/icon/qr.png"
+      },
+      {
+        "pagePath": "pages/barlist/barlist",
+        "text": "酒吧清单",
+        "iconPath": "images/icon/list_fill.png",
+        "selectedIconPath": "images/icon/list.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人信息",
+        "iconPath": "images/icon/profile_fill.png",
+        "selectedIconPath": "images/icon/profile.png"
+      }
+    ]
+  }
+}

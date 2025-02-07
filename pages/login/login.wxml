@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <input type="number" placeholder="请输入手机号" bindinput="onPhoneInput"/>
+  <button bindtap="login">登录</button>
+</view>

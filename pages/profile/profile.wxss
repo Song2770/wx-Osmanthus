@@ -1,0 +1,7 @@
+/* pages/profile/profile.wxss */
+.profile {
+  padding: 20px;
+}
+.user-info {
+  margin-bottom: 20px;
+}

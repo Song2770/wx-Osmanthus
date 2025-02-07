@@ -1,0 +1,9 @@
+<view class="container">
+  <image src="{{isLoggedIn ? qrCodeData : '/images/fake_qr.png'}}" mode="aspectFit" class="qr-code"/>
+  <block wx:if="{{!isLoggedIn}}">
+    <text class="login-prompt" bindtap="goToProfile">请先<text class="bold"> 登录 </text>以查看二维码</text>
+  </block>
+  <view class="progress-bar-container">
+    <view class="progress-bar" style="width: {{progress}}%"></view>
+  </view>
+</view>
