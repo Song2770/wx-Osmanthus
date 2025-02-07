@@ -1,7 +1,7 @@
 Page({
   data: {
     bars: [
-      { name: "霓虹跳舞俱乐部", location: "位置A" },
+      { name: "霓虹跳舞俱乐部", location: { latitude: 39.1186100, longitude: 117.196386, name: "霓虹跳舞俱乐部（吉利大厦店）" } },
       { name: "阁楼GLOW", location: "位置B" },
       { name: "BlackBoom", location: "位置C" },
       { name: "SALLA酒吧", location: "位置D"}
@@ -29,14 +29,22 @@ Page({
     // 查看活动详情逻辑
   },
   viewMap(e) {
-    const location = e.currentTarget.dataset.location;
+    const index = e.currentTarget.dataset.index;
+    const location = this.data.bars[index];
     // 打开地图查看位置
-    wx.openLocation({
-      latitude: location.latitude,
-      longitude: location.longitude,
-      name: location.name
-    });
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success (res) {
+        wx.openLocation({
+          latitude: location.latitude,
+          longitude: location.longitude,
+          name: location.name,
+          scale: 18
+        })
+  }})
   },
+
+  //callTaxi方法暂时不启用
   callTaxi(e) {
     const location = e.currentTarget.dataset.location;
     // 打开打车应用
