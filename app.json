@@ -32,7 +32,7 @@
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "个人信息",
+        "text": "我的",
         "iconPath": "images/icon/profile_fill.png",
         "selectedIconPath": "images/icon/profile.png"
       }
