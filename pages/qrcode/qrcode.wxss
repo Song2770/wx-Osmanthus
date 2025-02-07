@@ -11,8 +11,8 @@
 }
 
 .qr-code {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin-bottom: 20px;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -36,8 +36,7 @@
   background-color: #e9ecef;
   border-radius: 6px;
   overflow: hidden;
-  margin-top: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 14px;
 }
 
 .progress-bar {
