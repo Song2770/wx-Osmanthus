@@ -1,6 +1,6 @@
 <!--pages/profile/profile.wxml-->
 <view class="profile">
-  <block wx:if="{{isLoggedIn}}">
+  <block wx:if="{{!isLoggedIn}}">
     <view class="user-info">
       <view class="name-row">
         <text class="nickname">{{userInfo.nickname}}</text>
@@ -18,8 +18,8 @@
       <text>MBTI: {{userInfo.mbti}}</text>
       <text>生日: {{userInfo.birthday}}</text>
       <text>星座: {{userInfo.zodiac}}</text>
+      <button bindtap="contactSupport">联系客服</button>
     </view>
-    <button bindtap="contactSupport">联系客服</button>
   </block>
   <block wx:else>
     <view class="lr-view">

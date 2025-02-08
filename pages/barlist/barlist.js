@@ -1,10 +1,10 @@
 Page({
   data: {
     bars: [
-      { name: "霓虹跳舞俱乐部", location: { latitude: 39.1186100, longitude: 117.196386, name: "霓虹跳舞俱乐部（吉利大厦店）" } },
-      { name: "阁楼GLOW", location: "位置B" },
-      { name: "BlackBoom", location: "位置C" },
-      { name: "SALLA酒吧", location: "位置D"}
+      { name: "Something俱乐部", location: { latitude: 39.01, longitude: 117.19, name: "位置A" } },
+      { name: "IDK酒店", location: "位置B" },
+      { name: "中国XXXX银行", location: "位置C" },
+      { name: "Null酒吧", location: "位置D"}
     ]
   },
   onLoad() {
